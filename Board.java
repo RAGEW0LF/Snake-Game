@@ -153,19 +153,19 @@ public class Board extends JPanel implements ActionListener{
         
         if(score > highScore)
         {try {
-                PrintWriter writer = new PrintWriter(new FileWriter("C:\\Users\\yash\\OneDrive\\Desktop\\Snake Game\\src\\snake\\game\\scoredata.txt", true));
+                PrintWriter writer = new PrintWriter(new FileWriter("C:\\User \\(spath of scorce data)\\ scoredata.txt", true));
                 writer.println(score);     
                 writer.close();
                 } catch(Exception ex){
                 System.err.println("ERROR storing scores from file");
                 }   }
 
-          File file = new File("C:\\Users\\yash\\OneDrive\\Desktop\\Snake Game\\src\\snake\\game\\scoredata.txt");
+          File file = new File("C:\\Users\\(spath of scorce data)\\scoredata.txt");
 
            try  {
                 BufferedReader reader = new BufferedReader(new FileReader(file));
                 String line = reader.readLine();
-                Scanner scanner = new Scanner(new File("C:\\Users\\yash\\OneDrive\\Desktop\\Snake Game\\src\\snake\\game\\scoredata.txt"));
+                Scanner scanner = new Scanner(new File("C:\\Users\\(spath of scorce data)\\scoredata.txt"));
                 while (line != null)                 
                 { 
                     try {
